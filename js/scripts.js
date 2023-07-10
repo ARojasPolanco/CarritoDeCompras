@@ -4,6 +4,7 @@ import products from "./Products.js"
 import getProducts from "./helpers/getProducts.js"
 import cart from "./Cart.js"
 import darkMode from "./darkMode.js"
+import modal from "./modal.js"
 
 // Mostrar menu
 
@@ -25,4 +26,7 @@ cart(db, printProducts)
 
 darkMode()
 
+// modal
+
+modal()
 
