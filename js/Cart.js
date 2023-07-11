@@ -7,6 +7,8 @@ function cart (db, printProducts) {
     const countDOM = document.querySelector('.cart__count--item')
     const totalDOM = document.querySelector('.cart__total--item')
     const checkoutDOM = document.querySelector('.btn--buy')
+    const modal2 = document.querySelector('.modal2')
+    const closeModal = document.querySelector('.modal__close2')
     
     function printCart () {
         let htmlCart = ''
@@ -59,8 +61,12 @@ function cart (db, printProducts) {
         const productsFinded = db.find(p => p.id === id)
         if(itemFinded){
             if(itemFinded.qty >= productsFinded.quantity){
-                window.alert('No tenemos suficiente stock')
-            } else{
+                modal2.classList.add('modal--show')
+                
+                closeModal.addEventListener('click', function () {
+                    modal2.classList.remove('modal--show')
+                })
+            } else {
                 itemFinded.qty += qty
             }
         } else {
