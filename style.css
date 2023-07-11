@@ -773,6 +773,10 @@ body.darkmode{
     color: white;
 }
 
+.darkmode .cart__title{
+    color: white;
+}
+
 /* modal */
 
 .modal{
