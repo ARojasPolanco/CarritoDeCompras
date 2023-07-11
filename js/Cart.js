@@ -56,11 +56,15 @@ function cart (db, printProducts) {
 
     function addToCart(id, qty = 1) {
         const itemFinded = cart.find(i => i.id === id)
-
+        const productsFinded = db.find(p => p.id === id)
         if(itemFinded){
-            itemFinded.qty += qty
-        }else{
-            cart.push({ id, qty })
+            if(itemFinded.qty >= productsFinded.quantity){
+                window.alert('No tenemos suficiente stock')
+            } else{
+                itemFinded.qty += qty
+            }
+        } else {
+            cart.push({id, qty})
         }
 
         printCart()

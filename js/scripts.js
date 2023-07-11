@@ -5,7 +5,7 @@ import getProducts from "./helpers/getProducts.js"
 import cart from "./Cart.js"
 import darkMode from "./darkMode.js"
 import modal from "./modal.js"
-
+import loader from "./loader.js"
 // Mostrar menu
 
 showMenu()
@@ -29,4 +29,8 @@ darkMode()
 // modal
 
 modal()
+
+// loader
+
+loader()
 
