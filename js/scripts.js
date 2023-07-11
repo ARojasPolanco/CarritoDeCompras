@@ -1,6 +1,6 @@
 import showMenu from "./showMenu.js"
 import showCart from "./showCart.js"
-import products from "./Products.js"
+import products from "./products.js"
 import getProducts from "./helpers/getProducts.js"
 import cart from "./Cart.js"
 import darkMode from "./darkMode.js"

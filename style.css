@@ -99,7 +99,7 @@ body{
     color:var(--bg-oscuro-200);
     background-color: var(--bg-300);
 
-    transition: all .5s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 
 a{
