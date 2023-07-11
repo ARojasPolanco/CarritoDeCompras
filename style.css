@@ -792,6 +792,7 @@ body.darkmode{
     transition: opacity .6s .9s;
     --transform: translateY(-100vh);
     --transition: transform .8s;
+    user-select: none;
 }
 
 .modal--show{
@@ -823,6 +824,7 @@ body.darkmode{
     grid-auto-columns: 100%;
     transform: var(--transform);
     transition: var(--transition);
+    user-select: none;
 } 
 
 .modal__title{
@@ -869,6 +871,7 @@ body.darkmode{
     transition: opacity .6s .9s;
     --transform: translateY(100vh);
     --transition: transform .8s;
+    user-select: none;
 }
 
 .modal--show{
@@ -893,6 +896,7 @@ body.darkmode{
     grid-auto-columns: 100%;
     transform: var(--transform);
     transition: var(--transition);
+    user-select: none;
 } 
 
 .modal__title{
