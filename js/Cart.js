@@ -117,8 +117,8 @@ function cart (db, printProducts) {
         const productsFinded = db.find(p => p.id === item.id)
 
         productsFinded.quantity -= item.qty
-        }   
-
+    }   
+    
         cart = []
         printCart()
         printProducts()

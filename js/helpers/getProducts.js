@@ -1,5 +1,5 @@
 function getProducts() {
-    return window.fetch('https://ecommercebackend.fundamentos-29.repl.co/')
+    return window.fetch('https://services-academlo-shopping.onrender.com/')
     .then((res) => res.json())
     .then((data) => data)
     .catch((err) => { console.log(err) })
