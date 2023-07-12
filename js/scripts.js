@@ -8,29 +8,32 @@ import modal from "./modal.js"
 import loader from "./loader.js"
 // Mostrar menu
 
-showMenu()
-
-// Mostrar cart
-
-showCart()
-
-// Products
-
-const {db, printProducts } = products(await getProducts())
-
-// Cart
-
-cart(db, printProducts)
-
-// darkmode
-
-darkMode()
-
-// modal
-
-modal()
+document.addEventListener('DOMContentLoaded', async function () {
+    showMenu()
+    
+    // Mostrar cart
+    
+    showCart()
+    
+    // Products
+    
+    const {db, printProducts } = products(await getProducts())
+    
+    // Cart
+    
+    cart(db, printProducts)
+    
+    // darkmode
+    
+    darkMode()
+    
+    // modal
+    
+    modal()
+})
 
 // loader
-
-loader()
+window.addEventListener('load', function () {
+    loader()
+})
 
