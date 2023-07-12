@@ -122,7 +122,22 @@ function cart (db, printProducts) {
         cart = []
         printCart()
         printProducts()
-        window.alert('Gracias por realizar tu compra')
+        compra()
+    }
+
+    function compra(){
+        const compra = document.querySelector('.btn--buy')
+        const modal3 = document.querySelector('.modal3')
+        const closeModal = document.querySelector('.modal__close3')
+    
+        compra.addEventListener('click', function () {
+                modal3.classList.add('modal--show')
+
+        })
+    
+        closeModal.addEventListener('click', function () {
+            modal3.classList.remove('modal--show')
+        })
     }
 
     printCart()

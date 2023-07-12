@@ -6,6 +6,7 @@ import cart from "./Cart.js"
 import darkMode from "./darkMode.js"
 import modal from "./modal.js"
 import loader from "./loader.js"
+
 // Mostrar menu
 
 document.addEventListener('DOMContentLoaded', async function () {
@@ -30,6 +31,7 @@ document.addEventListener('DOMContentLoaded', async function () {
     // modal
     
     modal()
+
 })
 
 // loader
